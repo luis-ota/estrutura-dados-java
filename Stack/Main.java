@@ -2,26 +2,26 @@ package Stack;
 
 public class Main {
     public static void main(String[] args) {
-        StaticStack<Integer> staticStack = new StaticStack<Integer>(5);
+        DynamicStack dynamicStack = new DynamicStack();
 
-        staticStack.push(1);
-        staticStack.push(2);
-        staticStack.push(3);
-        staticStack.push(4);
-        staticStack.push(5);
+        dynamicStack.push(1);
+        dynamicStack.push(2);
+        dynamicStack.push(3);
+        dynamicStack.push(4);
+        dynamicStack.push(5);
+        dynamicStack.push(5);
+        dynamicStack.push(5);
+        dynamicStack.push(5);
 
-        System.out.println("Stack length: " + staticStack.len());
-        System.out.println("vazio: " + staticStack.isEmpty());
-        System.out.println("cheio: " + staticStack.isFull());
+        System.out.println("Stack length: " + dynamicStack.len());
+        System.out.println("vazio: " + dynamicStack.isEmpty());
 
-        staticStack.clear();
-        System.out.println("Stack length: " + staticStack.len());
-        System.out.println("vazio: " + staticStack.isEmpty());
-        System.out.println("cheio: " + staticStack.isFull());
+        dynamicStack.clear();
+        System.out.println("Stack length: " + dynamicStack.len());
+        System.out.println("vazio: " + dynamicStack.isEmpty());
 
-        staticStack.push(2);
-        System.out.println("Stack length: " + staticStack.len());
-        System.out.println("vazio: " + staticStack.isEmpty());
-        System.out.println("cheio: " + staticStack.isFull());
+        dynamicStack.push(2);
+        System.out.println("Stack length: " + dynamicStack.len());
+        System.out.println("vazio: " + dynamicStack.isEmpty());
     }
 }

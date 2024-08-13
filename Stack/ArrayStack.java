@@ -1,9 +1,10 @@
 package Stack;
 
-public abstract class ArrayStack <T> implements Stack<T>{
+public abstract class ArrayStack<T> implements Stack<T> {
     int count = 0;
     T[] data;
     int initialSize;
+
     public ArrayStack() {
 
     }
@@ -19,21 +20,14 @@ public abstract class ArrayStack <T> implements Stack<T>{
         this.count = 0;
     }
 
-    void resize(int newSize) {
-        T[] newArray = (T[]) new Object[newSize];
-        System.arraycopy(data, 0, newArray, 0, count);
-        data = newArray;
-    }
+
 
     public boolean isEmpty() {
-        return this.count==0;
+        return this.count == 0;
     }
 
-    public boolean isFull() {
-        return this.count == initialSize;
-    }
 
-    public int len(){
+    public int len() {
         return this.count;
     }
 }

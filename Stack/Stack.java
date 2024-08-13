@@ -1,14 +1,15 @@
 package Stack;
 
 public interface Stack<T> {
-    public void push(T item);
-    public T pop();
-    public void clear();
-    public int len();
-    public boolean isEmpty();
-    public boolean isFull();
+    void push(T item);
 
+    T pop();
 
+    void clear();
+
+    int len();
+
+    boolean isEmpty();
 
 
 }
